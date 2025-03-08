@@ -1,0 +1,68 @@
+@media (min-width: 800px) {
+    main {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+    }
+    h1{
+        grid-column: 1/3;
+        justify-content: center;
+        gap: 40px;
+    }
+    .third {
+        grid-column: 1/3;
+    }   
+    /*To erase the part of the three lines in the page*/
+    #menu::before {
+    content: none;
+    }
+    #menu.show::before {
+	content: none;
+    }
+	
+    
+    
+    nav ul li, nav ul li a {
+        list-style: none;
+        text-decoration: none;
+        font-family: var(--paragraph-font);
+    }
+
+    .navigation a {
+        color: var(--third-color);
+        font-weight: 700;
+        transition: 0.5s;
+        font-size: clamp(1rem, 2vmin, 1.5rem);
+    }
+    .navigation a:hover, navigation a:active {
+        text-decoration: lightseagreen;
+        background-color: #eee;
+        color: var(--primary-color);
+    }
+    .navigation {
+        max-width: 100%;
+    }
+
+    /*For erase and mantain the navigation bar in the computer screen*/
+    .navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+        background-color: #000;
+	}
+	.navigation a {
+		text-align: center;
+	}
+    .navigation.show {
+        padding: 0em;
+    }
+
+    #card {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 25px;
+        place-items: center;
+        padding: 1em;
+    }
+}
