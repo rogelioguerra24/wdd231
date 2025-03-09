@@ -17,7 +17,7 @@ header {
     background-color: var(--primary-color);
 }
 
-h1{
+.divas {
     color: var(--third-color);
     font-family: var(--header-font);
     font-size: 40px;
@@ -27,7 +27,7 @@ h1{
     align-items: center;
 }
 
-h1 img {
+.divas img {
     max-height: 100px;
     box-shadow: 5px 5px 10px black; 
 }
