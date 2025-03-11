@@ -1,0 +1,24 @@
+{
+    "familyName" : "Guerra Cespedes",
+    "dateOfMoved" : "2015-03-12",
+    "quantityOfMembers" : 3,
+    "visitedByBishop" : true,
+    "familyMembers" : [
+        {
+            "name" : "Rogelio Guerra",
+            "gender" : "Male",
+            "birthdate" : "2003-06-07"
+        },
+        {
+            "name" : "Carmen Guerra",
+            "gender" : "Female",
+            "birthdate" : "2004-06-07"
+        },
+        {
+            "name" : "Rodolfo Guerra",
+            "gender" : "Male",
+            "birthdate" : "1999-06-07"
+        }
+    ]
+    
+}
