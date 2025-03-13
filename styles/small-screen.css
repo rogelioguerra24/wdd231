@@ -86,13 +86,14 @@ nav ul li, nav ul li a {
 	background-color: var(--primary-color);
 	color: var(--third-color);
 }
-.show li {
+.open li {
 	display: block;
     background-color: antiquewhite;
 }
 
-.navigation.show {
+.navigation.open {
     padding: 1em;
+    transition: 1s ease-out;
 }
 
 
@@ -105,13 +106,14 @@ nav ul li, nav ul li a {
     right: 1rem; 
     font-size: 2rem; 
 }
-#menu.show::before {
+#menu.open::before {
 	content: "X";
     color: #F0EFF4;
 }
 
-.show li {
-	display: block;
+.open li {
+	display: grid;
+
 }
 
 /*This is for the design of the main*/

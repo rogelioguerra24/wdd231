@@ -12,8 +12,8 @@ const mainnav = document.querySelector('.navigation')
 const button = document.querySelector('#menu');
 
 button.addEventListener('click', () => {
-	mainnav.classList.toggle('show');
-	button.classList.toggle('show');
+	mainnav.classList.toggle('open');
+	button.classList.toggle('open');
 });
 
 const courses = [
