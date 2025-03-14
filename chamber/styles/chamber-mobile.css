@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --font-paragraph: "Outfit", sans-serif;
+    --font-title: "Emblema One", system-ui;
+    --first-background-color: #0F0A0A;
+    --second-background-color: #E4E6C3;
+    --third-background-color: #F5EFED;
+    --color-interchangeable: #05204A;
+    --color-interchangable-two: #044389;
+}
+/*To aling all to the center*/
+
+
+/*To erase every part of the extra decoration part*/
+a, li{
+    text-decoration: none;
+    list-style: none;
+
+}
+
+/*The following code is for desing the header part of the page*/
+header {
+    background-color: var(--color-interchangeable);
+    font-family: var(--font-title);
+    color: var(--third-background-color);
+    
+}
+
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0 0.5rem 0.5rem;
+    justify-self: end;
+}
+
+.companyName{
+    justify-content: space-between;
+}
+h1 {
+    margin: 0;
+}
+
+
+/*The following code is for desing the navigation part of the page*/
+nav {
+    font-family: var(--font-paragraph);
+    background-color: var(--second-background-color);
+    text-align: right; 
+}
+
+#myButton::before {
+    content: "𓃑";
+}
+
+#myButton.open::before {
+    content: "𓏬";
+}
+
+
+ul.menuLinks li a {
+    text-align: left;
+    display: block;
+    padding: .75rem 2vw;
+    color: var(--color-interchangeable);
+    font-weight: bold;
+}
+
+
+.directory {
+    background-color: var(--third-background-color);
+    
+}
+
+
+/*The following code is for desing the main or cards part of the page*/
+main {
+    max-width: 800px;
+    margin: 1em auto;
+    text-align: center;
+}
+.menu{
+    background-color: var(--color-interchangable-two);
+    padding: 0.5rem 1rem;
+    margin: 1em;
+    border-radius: 8px;
+}
+#grid, #list{
+    border: none;
+    border-radius: 8px;
+    padding: 1em;
+    cursor: pointer;
+    font-family: var(--font-paragraph);
+}
+
+/*The following code is for desing the footer part of the page*/
+footer {
+    background-color: var(--first-background-color);
+    color: var(--third-background-color);
+    font-family: var(--font-paragraph);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 10px;
+}
+.social-media{
+    display: flex;
+    gap: 10px;
+}
+.social-media img{
+    max-width: 45px;
+}

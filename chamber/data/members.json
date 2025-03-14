@@ -1,0 +1,67 @@
+{
+    "companies": [
+        {
+            "name": "Apple",
+            "adress": "One Apple Park Way, Cupertino, CA 95014, USA",
+            "phoneNumber": "+1-800-MY-APPLE",
+            "websiteUrl": "https://www.apple.com",
+            "iconOrImages": "https://logo.apple.com",
+            "memberLevel": 3,
+            "slogan": "Think Different."
+        },
+        {
+            "name": "Microsoft",
+            "adress": "One Microsoft Way, Redmond, WA 98052, USA",
+            "phoneNumber": "+1-425-882-8080",
+            "websiteUrl": "https://www.microsoft.com",
+            "iconOrImages": "https://logo.microsoft.com",
+            "memberLevel": 3,
+            "slogan": "Empowering us all."
+        },
+        {
+            "name": "X",
+            "adress": "1600 Amphitheatre Parkway, Mountain View, CA 94043, USA",
+            "phoneNumber": "+1-650-253-0000",
+            "websiteUrl": "https://x.com/",
+            "iconOrImages": "https://logo.google.com",
+            "memberLevel": 3,
+            "slogan": "Do the right thing."
+        },
+        {
+            "name": "Amazon",
+            "adress": "410 Terry Ave N, Seattle, WA 98109, USA",
+            "phoneNumber": "+1-888-280-4331",
+            "websiteUrl": "https://www.amazon.com",
+            "iconOrImages": "https://logo.amazon.com",
+            "memberLevel": 1,
+            "slogan": "Work Hard. Have Fun. Make History."
+        },
+        {
+            "name": "Messenger",
+            "adress": "3500 Deer Creek Road, Palo Alto, CA 94304, USA",
+            "phoneNumber": "+1-888-518-3752",
+            "websiteUrl": "https://www.messenger.com",
+            "iconOrImages": "https://logo.tesla.com",
+            "memberLevel": 3,
+            "slogan": "Accelerating the world's transition to sustainable energy."
+        },
+        {
+            "name": "Samsung",
+            "adress": "129 Samsung-ro, Yeongtong-gu, Suwon-si, Gyeonggi-do, South Korea",
+            "phoneNumber": "+82-2-2255-0114",
+            "websiteUrl": "https://www.samsung.com",
+            "iconOrImages": "https://logo.samsung.com",
+            "memberLevel": 2,
+            "slogan": "Inspire the World, Create the Future."
+        },
+        {
+            "name": "Sony",
+            "adress": "1-7-1 Konan, Minato-ku, Tokyo 108-0075, Japan",
+            "phoneNumber": "+81-3-6748-2111",
+            "websiteUrl": "https://www.sony.com",
+            "iconOrImages": "https://logo.sony.com",
+            "memberLevel": 1,
+            "slogan": "Be Moved."
+        }
+    ]
+}

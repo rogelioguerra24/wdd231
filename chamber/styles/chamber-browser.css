@@ -1,0 +1,54 @@
+@media (min-width: 800px) {
+    /*This part is for the design of the navigation bar and the header*/
+    header {
+        display: flex;
+        align-items: center;
+        padding: 0.5em;
+        gap: 10px;
+    }
+    #myButton {
+        display: none;
+    }
+    ul.menuLinks { 
+        display: none;
+    }
+    ul.menuLinks.open, ul.menuLinks {
+        display: flex;
+        flex-direction: row; 
+        justify-content: flex-end;/* Default: column for mobile */
+    }
+    ul.menuLinks a:hover {
+        background-color: var(--color-interchangable-two);
+        color: var(--third-background-color);
+    }
+    header img {
+        max-width: 100px;
+    }
+    /*This is the end for the nav and header*/
+    
+}
+@media (max-width: 800px) {
+    /*This part is for the design of the navigation bar and the header*/
+    header {
+    display: grid;
+    grid-template-columns: 0.2fr auto 1fr;
+    align-items: center;
+    padding: 0.5em;
+    gap: 10px;
+}
+    header img {
+        max-width: 100px;
+    }
+    nav {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.5s ease-out;
+    }
+    nav ul {
+        overflow: hidden;
+    }
+    nav.open {
+        grid-template-rows: 1fr;
+    }
+    /*This is the end for the nav and header*/
+}

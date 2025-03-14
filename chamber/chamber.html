@@ -10,9 +10,69 @@
     <meta property="og:image" content="https://www.connectpayusa.com/hubfs/LivingstonChamberGroupPhoto.jpg">
     <meta property="og:url" content="https://rogelioguerra24.github.io/wdd231/chamber/chamber.html">
     <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/chamber-browser.css">
+    <link rel="stylesheet" href="styles/chamber-mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <script src="scripts/chamber.js" defer></script>
     <title>Businesses Directory</title>
 </head>
 <body>
+    <header>
+        <img src="images/logo.png" alt="Businesses Icon" >
+        <div class="companyName">
+            <h1>Timbuktu</h1>
+            <p>Chamber of Commerce</p>
+        </div> 
+        <button id="myButton"></button>
+    </header>
+
+    <nav id="animated-met">
+        <ul class="menuLinks">
+            <li><a href="#" title="Home">Home</a></li>
+            <li><a href="#" class="directory" title="Businesses Directory">Directory</a></li>
+            <li><a href="#" title="Join">Join</a></li>
+            <li><a href="#" title="Discover">Discover</a></li>
+        </ul>
+    </nav>
     
+
+    <main>
+        <div class="menu">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">📄List</button>
+        </div>
+        <img src="https://rogelioguerra24.github.io/wdd131/images/home-page-in-mobile.png" alt="">
+        <div id="cards"></div>
+
+    </main>
+
+    <footer>
+        <div>
+            <h2>Timbuktu Chamber of Commerce</h2>
+            <p>10 Rue De La Paix</p>
+            <p>Timbuktu, Mali 999</p>
+            <p>info@timbuktucc.org</p>
+            <p>(223) 555-2300</p>
+        </div>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebookicon.png" loading="lazy" alt="Facebook" width="100">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/instagramicon.png" loading="lazy" alt="Instagram" width="100">
+            </a>
+            <a href="https://www.whatsapp.com/" target="_blank">
+                <img src="images/whatsappicon.png" loading="lazy" alt="WhatsApp" width="100">
+            </a>
+        </div>
+        <div>
+            <p>WDD231 class Project</p>
+            <p>Rogelio Guerra</p>
+            <p> &copy; <span id="currentyear"></span> | Timbuktu Chamber of Commerce</p>
+            <p> Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
 </body>
 </html>
