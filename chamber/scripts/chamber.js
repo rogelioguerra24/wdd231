@@ -16,3 +16,7 @@ burgerElement.addEventListener('click', () => {
     menuElement.classList.toggle('open');
     burgerElement.classList.toggle('open');
 });
+
+//This part is for creating the cards for the page
+const url = "https://raw.githubusercontent.com/rogelioguerra24/wdd231/refs/heads/main/chamber/data/members.json";
+const cards = document.querySelector("#cards");
