@@ -13,8 +13,12 @@
     --color-interchangable-two: #044389;
 }
 /*To aling all to the center*/
-
-
+.why{
+    display: none;
+}
+.title {
+    font-size: 40px;
+}
 /*To erase every part of the extra decoration part*/
 a, li{
     text-decoration: none;
