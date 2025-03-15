@@ -25,6 +25,26 @@
         max-width: 100px;
     }
     /*This is the end for the nav and header*/
+    footer {
+        background-color: var(--first-background-color);
+        color: var(--third-background-color);
+        font-family: var(--font-paragraph);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+        padding: 10px;
+    }
+    .social-media{
+        display: flex;
+        gap: 10px;
+    }
+    .social-media img{
+        max-width: 45px;
+    }
+    .list section{
+        min-width: 800px;
+    }
     
 }
 @media (max-width: 800px) {
@@ -51,4 +71,16 @@
         grid-template-rows: 1fr;
     }
     /*This is the end for the nav and header*/
+    .list section p.level {
+        display: none;
+    }
+    .list section p.adress{
+        display: none;
+    }
+    .list section p.phone{
+        display: none;
+    }
+    .list section {
+        min-width: 98%;
+    }
 }

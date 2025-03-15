@@ -47,7 +47,6 @@ h1 {
     margin: 0;
 }
 
-
 /*The following code is for desing the navigation part of the page*/
 nav {
     font-family: var(--font-paragraph);
@@ -90,14 +89,99 @@ main {
     padding: 0.5rem 1rem;
     margin: 1em;
     border-radius: 8px;
+    gap: 10px;
 }
 #grid, #list{
     border: none;
     border-radius: 8px;
     padding: 1em;
     cursor: pointer;
+    font-weight: 700;
     font-family: var(--font-paragraph);
 }
+/*This is for the section part of the page */
+section {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+	background-color: var(--third-background-color);
+    color: var(--first-background-color);
+    height: 85%;
+    font-family: var(--font-paragraph);
+    font-weight: bold;
+}
+
+.grid, .cards{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+	gap: 10px;
+	align-items: center;
+}
+
+.grid section {
+	text-align: center;
+    
+}
+.grid p {
+    font-family: var(--font-paragraph);
+}
+
+.grid h3 {
+	font-family: var(--font-paragraph);
+    font-weight: bold;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+}
+
+.list section {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+	margin: 0;
+    gap: 10px;
+	padding: 0.25rem;
+}
+
+
+
+.list section img {
+	padding: 1rem; /* smaller viewports only */
+}
+
+.list section h3 {
+	font-size: 1rem;
+	font-family: var(--font-paragraph)
+}
+
+.list section:nth-child(even) {
+	background-color: #bed;
+}
+
+.list section h3.slogan {
+    display: none;
+}
+.list.adress{
+    display: none;
+}
+section h3 {
+	font-size: 1.5rem;
+}
+
+section p {
+	font-weight: 600;
+	font-size: smaller;
+}
+
+section a {
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 0.85rem;
+	color: var(--color-interchangeable);
+	letter-spacing: 1.1pt;
+}
+
 
 /*The following code is for desing the footer part of the page*/
 footer {
@@ -105,10 +189,9 @@ footer {
     color: var(--third-background-color);
     font-family: var(--font-paragraph);
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 10px;
-    padding: 10px;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
 }
 .social-media{
     display: flex;
