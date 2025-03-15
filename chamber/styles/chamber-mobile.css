@@ -181,22 +181,3 @@ section a {
 	color: var(--color-interchangeable);
 	letter-spacing: 1.1pt;
 }
-
-
-/*The following code is for desing the footer part of the page*/
-footer {
-    background-color: var(--first-background-color);
-    color: var(--third-background-color);
-    font-family: var(--font-paragraph);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-}
-.social-media{
-    display: flex;
-    gap: 10px;
-}
-.social-media img{
-    max-width: 45px;
-}

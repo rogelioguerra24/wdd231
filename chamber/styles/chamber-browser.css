@@ -30,6 +30,7 @@
         color: var(--third-background-color);
         font-family: var(--font-paragraph);
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: space-around;
         gap: 10px;
@@ -83,4 +84,22 @@
     .list section {
         min-width: 98%;
     }
+    /*The following code is for desing the footer part of the page*/
+    footer {
+        background-color: var(--first-background-color);
+        color: var(--third-background-color);
+        font-family: var(--font-paragraph);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    .social-media{
+        display: flex;
+        gap: 10px;
+    }
+    .social-media img{
+        max-width: 45px;
+    }
+
 }
