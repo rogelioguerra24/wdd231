@@ -17,7 +17,8 @@
     display: none;
 }
 .title {
-    font-size: 40px;
+    font-size: 1.8rem;
+    max-width: 40px;
 }
 /*To erase every part of the extra decoration part*/
 a, li{
