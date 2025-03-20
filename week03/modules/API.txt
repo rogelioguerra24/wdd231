@@ -1,0 +1,5 @@
+API Call
+https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
+
+Key for Rogelio Guerra
+cdc74a28490c0e57d724282f25576cff
