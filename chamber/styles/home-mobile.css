@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --font-paragraph: "Outfit", sans-serif;
+    --font-title: "Emblema One", system-ui;
+    --first-background-color: #0F0A0A;
+    --second-background-color: #E4E6C3;
+    --third-background-color: #F5EFED;
+    --color-interchangeable: #05204A;
+    --color-interchangable-two: #044389;
+}
+
+/*To erase every part of the extra decoration part*/
+a, li{
+    text-decoration: none;
+    list-style: none;
+}
+
+/*The following code is for desing the header part of the page*/
+header {
+    background-color: var(--color-interchangeable);
+    font-family: var(--font-title);
+    color: var(--third-background-color);
+}
+
+.title {
+    font-size: 1.8rem;
+    max-width: 40px;
+}
+
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0 0.5rem 0.5rem;
+    justify-self: end;
+}
+
+.companyName{
+    justify-content: space-between;
+}
+
+/*The following code is for desing the navigation part of the page*/
+nav {
+    font-family: var(--font-paragraph);
+    background-color: var(--second-background-color);
+    text-align: right; 
+}
+
+#myButton::before {
+    content: "𓃑";
+}
+
+#myButton.open::before {
+    content: "𓏬";
+}
+
+
+ul.menuLinks li a {
+    text-align: left;
+    display: block;
+    padding: .75rem 2vw;
+    color: var(--color-interchangeable);
+    font-weight: bold;
+}
+
+.current-page {
+    background-color: var(--third-background-color);
+    
+}
+/*The code of above is for designing the navigation bar and the footer*/
+
+/*This following code is for the desing of the hero image*/
+.hero{
+    position: relative;
+    width: 100%;
+    
+}
+.hero img{
+    width: 100%;
+    height: auto; /* Keep aspect ratio */
+    display: block;
+}
+
+
+/*This part of code is for the desing of the sections main*/
+
+.weathers h1{
+    font-family: var(--font-title);
+}
+
+.weathers section {
+
+    background-color: var(--third-background-color);
+    font-family: var(--font-paragraph);
+    
+}
+
+.weathers section h2 {
+    background-color: var(--color-interchangeable);
+    color: var(--third-background-color);
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+}
+
+.weathers section div {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.current-weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.current-weather h2 {
+    grid-column: 1/3;
+}
+
+.forecast-weather div p{
+    font-size: 1.6rem;
+    margin: 10px 0;
+}
+.forecast-weather div p span {
+    font-weight: lighter;
+}
+
+/*This is for the desing of the cards*/
+.cards{
+    padding: 10px;
+    display: grid;
+    grid-gap: 15px;
+    font-family: var(--font-paragraph);
+}
+
+.cards section {
+    border-radius: 10px ;
+    background-color: var(--third-background-color);
+}
+.cards h2 {
+    background-color: var(--color-interchangable-two);
+    padding: 10px 10px 0;
+    color: var(--second-background-color);
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+.cards h3 {
+    background-color: var(--color-interchangable-two);
+    padding: 0 10px 10px;
+    color: var(--third-background-color);
+    text-align: center;
+}
+
+.cards section .container {
+    display: flex;
+    align-items: center;
+}
+
+.cards img {
+    padding: 10px;
+    justify-content: center;
+    
+}
+.container div, div a{
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+.container div a {
+    color: #044389;
+}
+.container div {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    text-align: center;
+}
+
+.container div p {
+    font-weight: bold;
+    
+}
+.container div p span {
+    font-weight: lighter;
+}
+/*This part is for the weather part*/
+.current-weather div span{
+    font-weight: lighter;
+}
+.current-weather figure {
+    place-self: center;
+}
+#weather-icon {
+    background-color: aquamarine;
+    place-items: center;
+    width: 100%;
+    border-radius: 8px;
+}

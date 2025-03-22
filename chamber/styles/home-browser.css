@@ -1,0 +1,167 @@
+@media (min-width: 800px) {
+    /*This part is for the design of the navigation bar and the header*/
+    header {
+        display: flex;
+        align-items: center;
+        padding: 0.5em;
+        gap: 10px;
+    }
+    #myButton {
+        display: none;
+    }
+    ul.menuLinks { 
+        display: none;
+    }
+    ul.menuLinks.open, ul.menuLinks {
+        display: flex;
+        flex-direction: row; 
+        justify-content: flex-end;/* Default: column for mobile */
+    }
+    ul.menuLinks a:hover {
+        background-color: var(--color-interchangable-two);
+        color: var(--third-background-color);
+    }
+    header img {
+        max-width: 100px;
+    }
+    /*This is the end for the nav and header*/
+    footer {
+        background-color: var(--first-background-color);
+        color: var(--third-background-color);
+        font-family: var(--font-paragraph);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+        padding: 10px;
+    }
+    .social-media{
+        display: flex;
+        gap: 10px;
+    }
+    .social-media img{
+        max-width: 45px;
+        
+    }
+    .list section{
+        min-width: 800px;
+    }
+    /*The code of above is for designing the navigation bar and the footer*/
+    .weathers, .cards {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /*This following code is for the desing of the hero image*/
+    .hero{
+        position: relative;
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+        
+    }
+    .hero picture{
+        width: 100%;
+        height: auto; /* Keep aspect ratio */
+        display: block;
+        object-fit: cover;
+    }
+    .hero button {
+        position: absolute;
+        font-family: var(--font-title);
+        background-color: var(--color-interchangable-two);
+        color: var(--third-background-color);
+        font-weight: bold;
+        font-size: 2.5rem;
+        bottom: 10%;
+        right: 10%;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        padding: 1rem;   
+    }
+
+    /*This is for the change of the weathers section*/
+    .weathers {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1.7fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .weathers h1 {
+        grid-column: 1/4;
+    }
+    .cards{
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+}
+
+
+
+
+@media (max-width: 800px) {
+    /*This part is for the design of the navigation bar and the header*/
+    header {
+    display: grid;
+    grid-template-columns: 0.2fr auto 1fr;
+    align-items: center;
+    padding: 0.5em;
+    gap: 10px;
+    }
+    header img {
+        max-width: 100px;
+    }
+    nav {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.5s ease-out;
+    }
+    nav ul {
+        overflow: hidden;
+    }
+    nav.open {
+        grid-template-rows: 1fr;
+    }
+    
+    /*The following code is for desing the footer part of the page*/
+    footer {
+        background-color: var(--first-background-color);
+        color: var(--third-background-color);
+        font-family: var(--font-paragraph);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    .social-media{
+        display: flex;
+        gap: 10px;
+    }
+    .social-media img{
+        max-width: 45px;
+    }
+    /*The code of above is for designing the navigation bar and the footer*/
+    .weathers {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+
+    .hero button {
+        position: absolute;
+        font-family: var(--font-title);
+        background-color: var(--second-background-color);
+        color: var(--color-interchangeable);
+        font-weight: bold;
+        font-size: 1.3rem;
+        bottom: 10%;
+        right: 10%;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        padding: 0.5rem;   
+    }
+}

@@ -23,7 +23,7 @@ async function apiFetch () {
     }
 }
 function displayResults(data) {
-    console.log("Datos recibidos:", data);  // Agregado para verificar
+    //console.log("Datos recibidos:", data);  // Agregado para verificar
     currentTemp.innerHTML = `${data.main.temp}&deg;C`;
     
     const iconSrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
