@@ -131,7 +131,40 @@ function createcard(filtered) {
         } else {
             card.classList.add("not-completed");
         }
-
+        card.addEventListener("click", () => {
+            displayCourseDetails(courses)
+        })
         document.querySelector("#card").appendChild(card);
+    });
+}
+
+// THIS PART OF THE SCRIPT WILL ALLOW US TO USE THE DIALOG
+const showBtn = document.getElementById("show-dialog");
+const dialog = document.getElementById("course-details");
+
+
+
+
+function displayCourseDetails(course) {
+    dialog.innerHTML = '';
+    dialog.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+
+    dialog.showModal();
+
+    document.getElementById("closeModal").addEventListener("click", () => {
+        dialog.classList.add("closing"); // Start closing animation
+
+        setTimeout(() => {
+            dialog.classList.remove("closing"); // Remove animation class
+            dialog.close();
+    }, 300);
     });
 }

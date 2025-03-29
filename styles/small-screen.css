@@ -177,6 +177,7 @@ figcaption{
 
 .third ul {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 1em;
     text-align: center;
@@ -235,4 +236,67 @@ footer {
     font-size: 1.3rem;
     font-family: var(--paragraph-font);
     padding: 1em;   
+}
+
+/*This following part of the code will be for designing modal dialog element*/
+dialog[open] {
+    animation: dialogFadeIn 0.3s ease-out;
+    
+}
+
+dialog.closing {
+    animation: dialogFadeOut 0.3s ease-out;
+}
+
+dialog  {
+    padding: 3rem;
+    background-color: beige;
+    border: 2px solid burlywood;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: auto auto;
+    
+}
+
+::backdrop {
+    background-image: linear-gradient(
+        45deg,
+        orange,
+        white,
+        black
+    );
+    opacity: 0.5;
+    transition: all 0.7s dialogFadeIn;
+}
+
+dialog button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: .5rem 1rem;
+    border: 1px solid red;
+}
+
+
+
+@keyframes dialogFadeIn {
+    from {
+        opacity: 0;
+        transform: scaleY(0);
+        
+    }
+    to {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+@keyframes dialogFadeOut {
+    from {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+    to {
+        opacity: 0;
+        transform: scaleY(0);
+    }
 }

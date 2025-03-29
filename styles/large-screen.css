@@ -68,4 +68,7 @@
         place-items: center;
         padding: 1em;
     }
+    .third ul {
+        flex-direction: row;
+    }
 }
