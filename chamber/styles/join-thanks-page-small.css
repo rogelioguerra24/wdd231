@@ -1,0 +1,109 @@
+@media (min-width: 800px) {
+    /*This part is for the design of the navigation bar and the header*/
+    header {
+        display: flex;
+        align-items: center;
+        padding: 0.5em;
+        gap: 10px;
+    }
+    #myButton {
+        display: none;
+    }
+    ul.menuLinks { 
+        display: none;
+    }
+    ul.menuLinks.open, ul.menuLinks {
+        display: flex;
+        flex-direction: row; 
+        justify-content: flex-end;/* Default: column for mobile */
+    }
+    ul.menuLinks a:hover {
+        background-color: var(--color-interchangable-two);
+        color: var(--third-background-color);
+    }
+    header img {
+        max-width: 100px;
+    }
+    /*This is the end for the nav and header*/
+    footer {
+        background-color: var(--first-background-color);
+        color: var(--third-background-color);
+        font-family: var(--font-paragraph);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+        padding: 10px;
+    }
+    .social-media{
+        display: flex;
+        gap: 10px;
+    }
+    .social-media img{
+        max-width: 45px;
+    }
+    .list section{
+        min-width: 800px;
+    }
+    /*Organizing all the main page*/
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+    h1{
+        grid-column: 1/4;
+    }
+    
+    
+}
+@media (max-width: 800px) {
+    /*This part is for the design of the navigation bar and the header*/
+    header {
+    display: grid;
+    grid-template-columns: 0.2fr auto 1fr;
+    align-items: center;
+    padding: 0.5em;
+    gap: 10px;
+    }
+    header img {
+        max-width: 100px;
+    }
+    nav {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.5s ease-out;
+    }
+    nav ul {
+        overflow: hidden;
+    }
+    nav.open {
+        grid-template-rows: 1fr;
+    }
+    
+    /*The following code is for desing the footer part of the page*/
+    footer {
+        background-color: var(--first-background-color);
+        color: var(--third-background-color);
+        font-family: var(--font-paragraph);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    .social-media{
+        display: flex;
+        gap: 10px;
+    }
+    .social-media img{
+        max-width: 45px;
+    }
+    /*Organizing all the main page*/
+    main {
+        grid-template-columns: 1fr;
+    }
+
+}

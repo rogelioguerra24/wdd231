@@ -1,0 +1,353 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --font-paragraph: "Outfit", sans-serif;
+    --font-title: "Emblema One", system-ui;
+    --first-background-color: #0F0A0A;
+    --second-background-color: #E4E6C3;
+    --third-background-color: #F5EFED;
+    --color-interchangeable: #05204A;
+    --color-interchangable-two: #044389;
+}
+
+/*To erase every part of the extra decoration part*/
+    a, li{
+        text-decoration: none;
+        list-style: none;
+    }
+
+/*The following code is for desing the header part of the page*/
+    header {
+        background-color: var(--color-interchangeable);
+        font-family: var(--font-title);
+        color: var(--third-background-color);
+    }
+
+    .title {
+        font-size: 1.8rem;
+        max-width: 40px;
+    }
+
+    #myButton {
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        padding: 0 0.5rem 0.5rem;
+        justify-self: end;
+    }
+
+    .companyName{
+        justify-content: space-between;
+    }
+
+/*The following code is for desing the navigation part of the page*/
+    nav {
+        font-family: var(--font-paragraph);
+        background-color: var(--second-background-color);
+        text-align: right; 
+    }
+
+    #myButton::before {
+        content: "𓃑";
+    }
+
+    #myButton.open::before {
+        content: "𓏬";
+    }
+
+
+    ul.menuLinks li a {
+        text-align: left;
+        display: block;
+        padding: .75rem 2vw;
+        color: var(--color-interchangeable);
+        font-weight: bold;
+    }
+
+    .current-page {
+        background-color: var(--third-background-color);
+        
+    }
+
+/*THIS CODE IS FOR THE FORM HTML*/
+    .form-method {
+        width: 100%;
+    }
+    h1 {
+    color: #3D405B;
+    font-family: var(--font-title);
+    padding: 0.5rem;
+    }
+    section h2{
+        font-family: var(--font-paragraph);
+        color: var(--color-interchangable-two);
+        text-align: center;
+    }
+
+    .formDesign {
+        margin: 1rem 2%;
+        font-family: var(--font-paragraph);
+        background-color: var(--third-background-color);
+        max-width: 500px;
+        padding: 1em 3em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 1em;
+    }
+    .formDesign h3 {
+    font-size: 0.9rem;
+    color: #E07A5F;
+    margin: 1.5rem 0 0.2rem 0;
+    border-bottom: 1px solid #eee;
+    }
+
+    .formDesign input[type=text],
+    .formDesign input[type=tel],
+    .formDesign input[type=email]{
+    display: block;
+    margin: .1rem 0 1rem 0 ;
+    padding: .3rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color:#555;
+    font-size: 1rem;
+    color: #3D405B;
+    width: 250px;
+    }
+    .formDesign textarea {
+        margin: .1rem 0 1rem 0 ;
+        padding: .3rem;
+        border: 1px solid #999;
+        border-radius: 4px;
+        border-left-width: 5px;
+        border-left-color:#555;
+        font-size: 1rem;
+        color: #3D405B;
+        width: 250px;
+        height: 100px;
+    }
+
+    .formDesign input:required {border-left-color: #d70000;}
+    .formDesign input:focus {border-left-color: black; outline:none;}
+    .formDesign input:required:valid{border-left-color: green;}
+
+    .formDesign button[type=submit] {
+        font-family: var(--font-paragraph);
+        cursor: pointer;
+        border: none;
+        text-align: center;
+        background-color: var(--color-interchangeable);
+        color: white;
+        border-radius: 0.5rem;
+        padding: .75rem 1.5rem;
+        margin: 2rem 0;
+        font-size: 1.2rem;
+        -webkit-appearance: none;
+        appearance: none;
+        align-items: center;
+        width: 200px;
+        justify-content: space-around;
+    }
+
+    .formDesign button[type=submit]:hover {
+        background-color:#3D405B;
+    
+        box-shadow: 4px 4px 10px gray;;
+    }
+    
+    .formDesign label {
+        display: block;
+        font-size: 0.8rem;
+        color: var(--color-interchangable-two);
+        padding-top: 0.2rem ;
+    }
+
+    .formDesign input:-webkit-autofill{
+        -webkit-text-fill-color: #3D405B;
+    }
+
+    fieldset {
+        width: 230px; /* Slightly wider for better spacing */
+        padding: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #f9f9f9; /* Light background for contrast */
+    }
+    
+    fieldset legend {
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #333;
+    }
+    
+    fieldset label {
+        display: flex;
+        align-items: center; /* Align text with radio buttons */
+        gap: 0.5rem; /* Add spacing between radio button and text */
+        font-size: 1rem;
+        color: #333;
+        cursor: pointer; /* Makes clicking easier */
+    }
+    
+    fieldset input[type="radio"] {
+        width: auto; /* Reset width for small input types */
+        margin-right: 0.5em; /* Remove extra margin */
+        accent-color: blue; /* Customize radio button color */
+        transform: scale(1.1); /* Slightly enlarge radio buttons */
+        bottom: 0.2rem;
+    }
+    
+    fieldset input {
+        width: 100%;
+        padding: 0.5rem;
+        margin-bottom: 0.8rem;
+        border: 1px solid #999;
+        border-radius: 4px;
+    
+    }
+
+    #results {
+        font-family: var(--font-paragraph);
+        background-color: var(--third-background-color);
+        padding: 1rem;
+        border: 1px solid var(--second-background-color);
+        border-radius: 6px;
+        max-width: 800px;
+        margin: 1rem auto;
+    }
+    #results p {
+        margin: 1em 0;
+        text-align: left;
+    }
+    #results strong {
+       color: var(--color-interchangable-two);
+    }
+    #results h2 {
+        color: var(--color-interchangeable);
+        text-align: center;
+    }
+    .thankspage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .thankspage h1 {
+        text-align: center;
+    }
+
+/*This is for the design of the cards of levels*/
+#membership-levels{
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    font-family: var(--font-paragraph);
+}
+#membership-levels div {
+    text-align: center;
+    height: 4rem;
+    border-radius: 0.8rem;
+}
+
+#membership-levels div:hover{
+
+    box-shadow: 4px 4px 10px gray;;
+}
+.nonprofit {
+    background-color: #4CAF50;
+    color: var(--color-interchangeable);
+    font-style: italic;
+    align-content: center;
+    cursor: pointer;
+}
+.bronze {
+    background-color: #CD7F32;
+    color: var(--color-interchangeable);
+    font-style: italic;
+    align-content: center;
+    cursor: pointer;
+}
+.silver {
+    background-color: silver;
+    color: var(--color-interchangeable);
+    font-style: italic;
+    align-content: center;
+    cursor: pointer;
+}
+.gold {
+    background-color: gold;
+    color: var(--color-interchangeable);
+    font-style: italic;
+    align-content: center;
+    cursor: pointer;
+}
+
+/*This following part of the code will be for designing modal dialog element*/
+dialog[open] {
+    animation: dialogFadeIn 0.3s ease-out;
+    
+}
+
+dialog.closing {
+    animation: dialogFadeOut 0.3s ease-out;
+}
+
+dialog  {
+    padding: 3rem;
+    background-color: beige;
+    border: 2px solid burlywood;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: auto auto;
+    
+}
+
+::backdrop {
+    background-image: linear-gradient(
+        45deg,
+        #4CAF50,
+        orange,
+        silver,
+        gold
+    );
+    opacity: 0.5;
+    transition: 0.7s dialogFadeIn;
+}
+
+dialog button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: .5rem 1rem;
+    border: 1px solid red;
+}
+
+
+
+@keyframes dialogFadeIn {
+    from {
+        opacity: 0;
+        transform: scaleY(0);
+        
+    }
+    to {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+@keyframes dialogFadeOut {
+    from {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+    to {
+        opacity: 0;
+        transform: scaleY(0);
+    }
+}

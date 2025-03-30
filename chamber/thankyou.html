@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rogelio Guerra">
+    <meta name="description" content="Join Chamber Commerce Web Page">
+    <meta property="og:title" content="Join page | WDD231 | Rogelio Guerra">
+
+    <link rel="stylesheet" href="styles/join-thanks-page.css"> <!-- Load the main CSS file last -->
+    <link rel="stylesheet" href="styles/join-thanks-page-small.css"> 
+    <script src="scripts/join.js" defer></script>
+
+    <link rel="stylesheet" href="styles/home-browser.css">
+    <link rel="stylesheet" href="styles/home-mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>Submission Successful</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Businesses Icon" >
+        <div class="companyName">
+            <p class="title">Timbuktu</p>
+            <p>Chamber of Commerce</p>
+        </div> 
+        <button aria-label="Button" id="myButton"></button>
+    </header>
+
+    <nav id="animated-met">
+        <ul class="menuLinks">
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="directory.html" title="Businesses Directory">Directory</a></li>
+            <li><a href="join.html" class="current-page" title="Join">Join</a></li>
+            <li><a href="#" title="Discover">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main class="thankspage">
+        <h1>Membership Applying Details</h1>
+        <div id="results">Loading details...</div> <!-- Placeholder text until JS updates -->
+    </main>
+
+    
+
+<footer>
+    <div>
+        <h2>Timbuktu Chamber of Commerce</h2>
+        <p>10 Rue De La Paix</p>
+        <p>Timbuktu, Mali 999</p>
+        <p>info@timbuktucc.org</p>
+        <p>(223) 555-2300</p>
+    </div>
+    <div class="social-media">
+        <a href="https://facebook.com" target="_blank">
+            <img src="images/facebookicon.png" loading="lazy" alt="Facebook" width="100">
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+            <img src="images/instagramicon.png" loading="lazy" alt="Instagram" width="100">
+        </a>
+        <a href="https://www.whatsapp.com/" target="_blank">
+            <img src="images/whatsappicon.png" loading="lazy" alt="WhatsApp" width="100">
+        </a>
+    </div>
+    <div>
+        <p>WDD231 Class Project</p>
+        <p>Rogelio Guerra</p>
+        <p> &copy; <span id="currentyear"></span> | Timbuktu Chamber of Commerce</p>
+        <p> Last Modification: <span id="lastModified"></span></p>
+    </div>
+</footer>
+</body>
+</html>

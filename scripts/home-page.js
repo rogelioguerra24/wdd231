@@ -139,11 +139,7 @@ function createcard(filtered) {
 }
 
 // THIS PART OF THE SCRIPT WILL ALLOW US TO USE THE DIALOG
-const showBtn = document.getElementById("show-dialog");
 const dialog = document.getElementById("course-details");
-
-
-
 
 function displayCourseDetails(course) {
     dialog.innerHTML = '';

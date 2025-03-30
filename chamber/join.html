@@ -14,11 +14,99 @@
     <link rel="stylesheet" href="styles/join-thanks-page.css">
     <link rel="stylesheet" href="styles/join-thanks-page-small.css">
 
-    <script src="scripts/directory.js" defer></script>
+    <link rel="stylesheet" href="styles/home-browser.css">
+    <link rel="stylesheet" href="styles/home-mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <script src="scripts/join.js" defer></script>
     
     <title>Join Page</title>
 </head>
 <body>
+    <header>
+        <img src="images/logo.png" alt="Businesses Icon" >
+        <div class="companyName">
+            <p class="title">Timbuktu</p>
+            <p>Chamber of Commerce</p>
+        </div> 
+        <button aria-label="Button" id="myButton"></button>
+    </header>
+
+    <nav id="animated-met">
+        <ul class="menuLinks">
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="directory.html" title="Businesses Directory">Directory</a></li>
+            <li><a href="#" class="current-page" title="Join">Join</a></li>
+            <li><a href="#" title="Discover">Discover</a></li>
+        </ul>
+    </nav>
     
+    <main>
+        <h1>Join Now!</h1>
+        <section class="form-method">
+            <h2>Apply to be one of us</h2>
+            <form method="get" action="thankyou.html" class="formDesign">
+                <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+                <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                <label>Title <input type="text" name="title-organizational" required autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" placeholder="Chief Executive Officer" title="Only letters, spaces, and hyphens are allowed. Minimum 7 characters."></label>
+                <label>Email <input type="email" name="email" required autocomplete="email" placeholder="john89@gmail.com" title="Your Email"></label>
+                <label>Phone Number <input type="tel" name="phone-number" required autocomplete="tel" title="Your Phone Number"></label>
+                <label>Business Name<input type="text" name="business" required autocomplete="organization" title="The business/organization's name"></label>
+                <label for="business-description">Business Description</label>
+                <textarea title="Business's Brief Description" id="business-description" name="business-description"></textarea>
+                
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <label><input type="radio" class="rating-level" name="level-membership" value="Non Profit" checked>Non Profit Membership</label>
+                    <label><input type="radio" class="rating-level" name="level-membership" value="Bronze">Bronze Membership</label>
+                    <label><input type="radio" class="rating-level" name="level-membership" value="Silver">Silver Membership</label>
+                    <label><input type="radio" class="rating-level" name="level-membership" value="Gold">Gold Membership</label>
+                </fieldset>
+                
+
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <button type="submit" id="submit">Join Now</button>
+            </form>
+        </section>
+        
+        <section class="levels">
+            <h2>Membership Levels</h2>
+            <div id="membership-levels">
+            
+            </div>
+        </section>
+        <dialog id="level-description"></dialog>
+    </main>
+
+    <footer>
+        <div>
+            <h2>Timbuktu Chamber of Commerce</h2>
+            <p>10 Rue De La Paix</p>
+            <p>Timbuktu, Mali 999</p>
+            <p>info@timbuktucc.org</p>
+            <p>(223) 555-2300</p>
+        </div>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebookicon.png" loading="lazy" alt="Facebook" width="100">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/instagramicon.png" loading="lazy" alt="Instagram" width="100">
+            </a>
+            <a href="https://www.whatsapp.com/" target="_blank">
+                <img src="images/whatsappicon.png" loading="lazy" alt="WhatsApp" width="100">
+            </a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Rogelio Guerra</p>
+            <p> &copy; <span id="currentyear"></span> | Timbuktu Chamber of Commerce</p>
+            <p> Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
 </body>
 </html>
