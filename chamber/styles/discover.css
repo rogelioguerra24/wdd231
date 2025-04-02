@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --font-paragraph: "Outfit", sans-serif;
+    --font-title: "Emblema One", system-ui;
+    --first-background-color: #0F0A0A;
+    --second-background-color: #E4E6C3;
+    --third-background-color: #F5EFED;
+    --color-interchangeable: #05204A;
+    --color-interchangable-two: #044389;
+}
+
+/*To erase every part of the extra decoration part*/
+a, li{
+    text-decoration: none;
+    list-style: none;
+}
+
+/*The following code is for desing the header part of the page*/
+header {
+    background-color: var(--color-interchangeable);
+    font-family: var(--font-title);
+    color: var(--third-background-color);
+}
+
+.title {
+    font-size: 1.8rem;
+    max-width: 40px;
+}
+
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0 0.5rem 0.5rem;
+    justify-self: end;
+}
+
+.companyName{
+    justify-content: space-between;
+}
+
+/*The following code is for desing the navigation part of the page*/
+nav {
+    font-family: var(--font-paragraph);
+    background-color: var(--second-background-color);
+    text-align: right; 
+}
+
+#myButton::before {
+    content: "𓃑";
+}
+
+#myButton.open::before {
+    content: "𓏬";
+}
+
+
+ul.menuLinks li a {
+    text-align: left;
+    display: block;
+    padding: .75rem 2vw;
+    color: var(--color-interchangeable);
+    font-weight: bold;
+}
+
+.current-page {
+    background-color: var(--third-background-color);
+    
+}
+/*The code of above is for designing the navigation bar and the footer*/
