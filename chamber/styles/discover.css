@@ -74,3 +74,123 @@ ul.menuLinks li a {
     
 }
 /*The code of above is for designing the navigation bar and the footer*/
+
+/*This code is for the main part of the page*/
+#message {
+    font-family: var(--font-title);
+    color: var(--first-background-color);
+    padding: 10px;
+    text-align: center;
+}
+
+@keyframes slideRightToLeft {
+    0% {
+      transform: translateX(100%); 
+    }
+    100% {
+      transform: translateX(-100%); 
+    }
+}
+
+#cards div {
+    background-color: var(--third-background-color);
+    
+    font-family: var(--font-paragraph);
+
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 10px auto;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "photograph"
+    "description"
+    "location"
+    "button";
+}
+
+#cards div h2 {
+    margin: 1rem 10px;
+    grid-area: name;
+}
+
+#cards div img {
+    grid-area: photograph;
+}
+
+#cards div p{
+    margin: 10px;    
+    grid-area: description;
+}
+
+#cards div address{
+    margin: 10px;
+    grid-area: location;
+}
+
+#cards div button{
+    grid-area: button;
+    margin: 10px auto;
+    font-family: var(--font-title);
+    width: 120px;
+    border: none;
+    border-radius: 8px;
+    background-color: #044389;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+}
+#cards div button:hover{
+    filter: none;
+}
+
+#cards img {
+    max-width: 100%;
+    
+    object-fit: cover;
+    
+}
+@media only screen and (min-width: 38rem){
+    #cards div {
+        max-width: 600px;
+        grid-template-areas: 
+        "photograph name"
+        "photograph description"
+        "photograph location"
+        "photograph button";
+    }
+    #cards div img {
+        width: 220px;
+        height: 100%;
+        object-fit: cover;
+    }
+    #message {
+        animation: slideRightToLeft 13s linear infinite;
+        
+    }
+}
+@media only screen and (min-width: 64rem){
+    #cards{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}
+@media only screen and (min-width: 102rem){
+    #cards{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+    #cards div:hover {
+        box-shadow: 0 0 10px var(--color-interchangeable);
+    }
+}
+
+@media only screen and (min-width: 150rem){
+    #cards{
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+    }
+}
