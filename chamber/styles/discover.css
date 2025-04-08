@@ -167,6 +167,9 @@ ul.menuLinks li a {
         height: 100%;
         object-fit: cover;
     }
+    #cards div:hover {
+        box-shadow: 0 0 30px var(--color-interchangeable);
+    }
     #message {
         animation: slideRightToLeft 13s linear infinite;
         
@@ -184,9 +187,7 @@ ul.menuLinks li a {
     #cards{
         grid-template-columns: 1fr 1fr 1fr ;
     }
-    #cards div:hover {
-        box-shadow: 0 0 10px var(--color-interchangeable);
-    }
+    
 }
 
 @media only screen and (min-width: 150rem){

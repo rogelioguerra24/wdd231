@@ -19,7 +19,17 @@ burgerElement.addEventListener('click', () => {
 
 //This part is for creating the cards for the page 
 //This is an example of export and import
-import { interestingsItems } from "./interestingItems.mjs";
+//import { interestingsItems } from "./interestingItems.mjs";
+
+//This is an example of fettching data with url in another web page
+const url = "https://raw.githubusercontent.com/rogelioguerra24/wdd231/refs/heads/main/chamber/data/interestingItems.json";
+
+async function getItemsData() {
+    const response = await fetch(url);
+    const data = await response.json();
+    console.table(data.interestingsItems);
+    return data.interestingsItems; //Return an array
+};
 
 const cards = document.querySelector("#cards");
 
@@ -38,6 +48,7 @@ function createCards(listItems) {
         title.innerHTML = interestingItem.name;
         image.setAttribute("src", interestingItem.link);
         image.setAttribute("alt", interestingItem.name);
+        image.setAttribute("loading", "lazy")
         address.innerHTML = `<strong>Address:</strong> ${interestingItem.address}`;
         text.innerHTML = interestingItem.description;
         button.textContent = "Learn more";
@@ -55,7 +66,12 @@ function createCards(listItems) {
     });
 }
 
-createCards(interestingsItems);
+async function iniciate () {
+    const defaults = await getItemsData(url);
+    createCards(defaults)
+}
+
+iniciate();
 
 const currentDate = new Date();
 
