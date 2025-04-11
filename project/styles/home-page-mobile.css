@@ -1,0 +1,92 @@
+@media (max-width: 500px){
+
+    body { /*This line of code is to set a different background image*/
+        background: url(https://images.pexels.com/photos/6869060/pexels-photo-6869060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)no-repeat center center;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: var(--color-logo-three);
+    }
+    header img{
+        max-width: 150px;
+        position: relative;
+    }
+    
+    /*This part of code is more clear to set the burger button
+    The thing here is that you are only resizeing the grid of the nav
+    From 0fr to 1fr(all tha nav) and you erase the overflow with hidden
+    and you use a transition of grid-template-rows 0.5s ease-out using
+    open classList in Javascript*/
+    #animated-met {
+        display: grid;
+        overflow: hidden;
+        grid-template-rows: 0fr; /*Here you define the start*/
+        transition: grid-template-rows 0.5s ease-out; /*Here you define the transition */
+    }
+    #animated-met ul {
+        overflow: hidden; /*Here you hidden the overflow*/
+    }
+    #animated-met.open {
+        grid-template-rows: 1fr; /*Here you define the end*/
+    }
+
+    /*I learned the oposites of display and position
+    position: absolute vs position:relative or static
+    display: flex vs display: block
+    display inline-block is for things that don't let interact directly like 'a' */
+    .menuLinks {
+        display: block; 
+    }
+    .menuLinks li a {
+        width: 100%;
+    }
+    .menuLinks a:hover {
+        background-color: var(--color-logo-two);
+        color: var(--color-logo-three);
+    }
+
+    /*To set or resize the button and its content*/
+    #myButton {
+        display:block;
+    }
+    #myButton::before {
+        content: "𓃑";
+    }
+    #myButton.open::before {
+        content: "𓏬";
+    }
+    #myButton {
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: var(--color-logo-two);
+        cursor: pointer;
+        padding: 0 0.5rem 0.5rem;
+        justify-self: end;
+    }
+   
+    /*The part behind id for the nav and header of the page and the followig for the footer*/
+    .footer-social{
+        text-align: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-nav{
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 15px 15px 0;
+    }
+    .navigation-footer{
+        flex-direction: row;
+        gap: 30px;
+        justify-items: center;
+    }
+    .formDesign{
+        display: none;
+    }
+    
+}
