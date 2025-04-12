@@ -13,16 +13,15 @@ const year = document.querySelector("#currentyear");
 year.innerHTML = `${today.getFullYear()}`;
 
 //This is an example of fettching data with url in another web page
-//const url = "https://raw.githubusercontent.com/rogelioguerra24/wdd231/refs/heads/main/chamber/data/interestingItems.json";
+const url = "https://raw.githubusercontent.com/rogelioguerra24/wdd231/refs/heads/main/project/data/ourClients.json";
 
-/*async function getItemsData() {
+async function getItemsData() {
     const response = await fetch(url);
-    const data = await response.json();
-    console.table(data.interestingsItems);
-    return data.interestingsItems; //Return an array
+    const data = await response.json();  
+    return data.ourClients; //Return an array
 };
 
-//const cards = document.querySelector("#cards");
+const cards = document.querySelector("#cards");
 
 function createCards(ourClients) {
     cards.innerHTML = ""; // Clear previous content
@@ -52,9 +51,14 @@ function createCards(ourClients) {
     });
 }
 
-async function iniciate () {
-    const defaults = await getItemsData(url);
-    createCards(defaults)
+function getRandomItems(array) {
+    return array.sort(() => Math.random() - 0.5).slice(0, 6);
 }
 
-iniciate();*/
+async function iniciate () {
+    const defaults = await getItemsData(url);
+    let randomData = getRandomItems(defaults)
+    createCards(randomData)
+}
+
+iniciate();

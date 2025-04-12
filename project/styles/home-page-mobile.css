@@ -84,8 +84,37 @@
         display: none;
     }
     /*The code of above is used to the navigation and footer*/
-
     .section-hero-image{
         background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../images/hero-image-mobile.webp);
+    }
+
+    /*This code is for hero image*/
+    .hero-text h1{
+        font-size: 2.4rem;
+    }
+    .hero-text p{
+        font-size: 0.9rem;
+    }
+
+    /*This is for the sub section*/
+    .section-sub h2, p {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .section-sub h2 {
+        font-size: 1.8rem;
+    }
+    .section-sub p{
+        font-size: 0.9rem;
+    }
+
+    /*This following code is for the random cards*/
+    #cards div {
+        max-width: 400px;
+        grid-template-areas: 
+        "name"
+        "photograph"
+        "description"
+        "location"
     }
 }

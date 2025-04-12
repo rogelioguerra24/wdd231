@@ -198,7 +198,7 @@ main{
 .hero-text p{
     font-size: 1rem;
 }
-.hero-text button {
+.hero-text a {
     cursor: pointer;
     font-family: var(--font-title);
     font-size: 1.5rem;
@@ -210,7 +210,7 @@ main{
     background-color: var(--color-logo-one);
     color: var(--color-logo-three);
 }
-.hero-text button:hover {
+.hero-text a:hover {
     background-color: var(--color-logo-two);
     box-shadow: 0 10px 30px rgba(61, 64, 91, 0.4);
 }
@@ -235,8 +235,65 @@ main{
     text-decoration-color: var(--color-logo-one);
 }
 
-/*Second section of the home page*/
-.section-three{
+/*Third section of the home page*/
+#cards div {
+    background-color: #FAD6B2;
+    font-family: var(--font-paragraph);
+    border-radius: 8px;
+    margin: 10px auto;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    max-width: 600px;
+    grid-template-areas: 
+    "photograph name"
+    "photograph description"
+    "photograph location"
+}
+
+#cards div h2 {
+    margin: 1rem 10px;
+    grid-area: name;
+}
+#cards div img {
+    grid-area: photograph;
+}
+#cards div p{
+    margin: 10px;    
+    grid-area: description;
+}
+#cards div address{
+    margin: 10px;
+    grid-area: location;
+}
+#cards img {
+    max-width: 100%;
+    object-fit: cover;
+    
+}
+#cards div img {
+    
+    height: 100%;
+    object-fit: cover;
+}
+#cards div:hover {
+    box-shadow: 0 0 10px var(--color-logo-two);
+}
+
+@media only screen and (min-width: 64rem){
+    #cards{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        gap: 10px;
+    }
+    #cards div {
+        max-height: 200px;
+    }
+}
+@media only screen and (min-width: 102rem){
+    #cards{
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+    }
+    
 }
