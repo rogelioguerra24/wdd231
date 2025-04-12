@@ -120,4 +120,7 @@
     #cards img{
         max-width: 100%;
     }
+    #cards div:hover {
+        box-shadow: none;
+    }
 }

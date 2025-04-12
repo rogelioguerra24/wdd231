@@ -286,6 +286,7 @@ main{
         max-height: 200px;
     }
     #cards div img {
+        height: 100%;
         max-width: 150px;
     }
 }
