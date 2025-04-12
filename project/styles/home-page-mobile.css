@@ -1,10 +1,5 @@
 @media (max-width: 500px){
 
-    main { /*This line of code is to set a different background image*/
-        background: url(https://images.pexels.com/photos/6869060/pexels-photo-6869060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)no-repeat center center;
-        background-size:cover;
-    }
-
     header {
         display: flex;
         justify-content: space-between;
@@ -89,4 +84,8 @@
         display: none;
     }
     /*The code of above is used to the navigation and footer*/
+
+    .section-hero-image{
+        background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../images/hero-image-mobile.webp);
+    }
 }

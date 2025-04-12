@@ -1,0 +1,60 @@
+{
+    "ourClients": [
+        {
+            "name": "Carlos Ramirez",
+            "address": "Lima, Peru",
+            "comment": "Diersac always delivers on time and with great care. They're a key part of our operations.",
+            "link": "images/client-one.webp",
+            "alt": "Carlos Ramirez, satisfied Diersac client from Lima"
+        },
+        {
+            "name": "Lucia Fernandez",
+            "address": "Arequipa, Peru",
+            "comment": "Excellent customer service and super-efficient logistics. Highly recommended!",
+            "link": "images/client-two.webp",
+            "alt": "Lucia Fernandez giving a testimonial for Diersac"
+        },
+        {
+            "name": "Andres Torres",
+            "address": "Trujillo, Peru",
+            "comment": "With Diersac, our products arrive fast and in perfect condition. Full trust.",
+            "link": "images/client-three.webp",
+            "alt": "Andres Torres, business owner from Trujillo"
+        },
+        {
+            "name": "Maria Gomez",
+            "address": "Cusco, Peru",
+            "comment": "A serious and committed company with a fantastic team. Thank you, Diersac!",
+            "link": "images/client-four.webp",
+            "alt": "Maria Gomez, Diersac client from Cusco"
+        },
+        {
+            "name": "Diego Salazar",
+            "address": "Piura, Peru",
+            "comment": "They provide consistent, hassle-free service. Diersac is pure efficiency.",
+            "link": "images/client-five.webp",
+            "alt": "Diego Salazar sharing positive feedback about Diersac"
+        },
+        {
+            "name": "Valeria Mendoza",
+            "address": "Chiclayo, Peru",
+            "comment": "Well-organized logistics and clear communication every step of the way. 10/10!",
+            "link": "images/client-six.webp",
+            "alt": "Valeria Mendoza, happy client of Diersac in Chiclayo"
+        },
+        {
+            "name": "Jose Luis Vargas",
+            "address": "Huancayo, Peru",
+            "comment": "Since working with Diersac, our customer satisfaction has improved dramatically.",
+            "link": "images/client-seven.webp",
+            "alt": "Jose Luis Vargas giving his opinion about Diersac's service"
+        },
+        {
+            "name": "Ana Maria Silva",
+            "address": "Tacna, Peru",
+            "comment": "On-time deliveries with excellent tracking support. Diersac makes a real difference.",
+            "link": "images/client-eight.webp",
+            "alt": "Ana Maria Silva, Diersac client from Tacna sharing her experience"
+        }
+    ]
+}
