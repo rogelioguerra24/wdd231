@@ -1,10 +1,5 @@
 @media (max-width: 500px){
 
-    main { /*This line of code is to set a different background image*/
-        background: url(https://images.pexels.com/photos/6869060/pexels-photo-6869060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)no-repeat center center;
-        background-size:cover;
-    }
-
     header {
         display: flex;
         justify-content: space-between;
@@ -109,4 +104,53 @@
         font-size: 0.9rem;
     }
 
+    /*This code is for designing the second section part of the main*/
+    .section-gallery{
+        grid-template-columns: 1fr;
+        padding: 40px 15px;
+        gap: 10px;
+    }
+
+    #buttonDisplay { 
+        display: block;  
+        width: 100%;
+        
+        padding: 10px 0;
+        border: none;
+        background-color: var(--color-logo-one);
+        font-family: var(--font-title);
+        font-size: 30px;
+    }
+
+    #buttonDisplay {
+        display:block;
+    }
+    #buttonDisplay::before {
+        content: "FILTER";
+    }
+    #buttonDisplay.open::before {
+        content: "⇊⇊⇊⇊";
+    }
+    .menuLinksFilter a:hover{
+        background-color: var(--color-logo-two);
+        color: var(--color-logo-three);
+    }
+
+    .product-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+    
+    #animated-metFilter {
+        display: grid;
+        overflow: hidden;
+        grid-template-rows: 0fr; /*Here you define the start*/
+        transition: grid-template-rows 0.5s ease-out; /*Here you define the transition */
+    }
+    #animated-metFilter ul {
+        overflow: hidden; /*Here you hidden the overflow*/
+    }
+    #animated-metFilter.open {
+        grid-template-rows: 1fr; /*Here you define the end*/
+    }
 }

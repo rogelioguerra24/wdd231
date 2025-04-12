@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="styles/products-page.css">
     <link rel="stylesheet" href="styles/products-page-mobile.css">
 
-    <script src="scripts/products-page.js" defer></script>
+    <script src="scripts/products-page.js" type="module"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,7 +41,6 @@
 
     <nav id="animated-met">
         <ul class="menuLinks">
-            
             <li><a href="index.html" title="Home">Home</a></li>
             <li><a href="products-page.html" id="current-page" title="Products">Products</a></li>
             <li><a href="reach-me-page.html" title="Reach Me">Reach Me</a></li>
@@ -56,7 +55,25 @@
                 <p>Discover essential, high-quality items delivered fast and reliably — all in one place.</p>
             </div>
         </section>
-        <div id="cards"></div>
+
+        <div class="section-gallery">
+            <div class="filters">
+                <button aria-label="Button" id="buttonDisplay"></button>
+                <nav id="animated-metFilter">
+                    <ul class="menuLinksFilter">
+                        <li><a id="products-all">All Products</a></li>
+                        <li><a id="products-cookie">Cookies</a></li>
+                        <li><a id="products-detergente">Detergentes</a></li>
+                        <li><a id="products-toiletpaper">Toilet Papers</a></li>
+                        <li><a id="products-soda">Sodas</a></li>
+                        <li><a id="products-tunas">Tunas</a></li>
+                        <li><a id="products-milks">Milks</a></li>
+                        <li><a id="products-oil">Oils</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="cards" class="product-cards"></div>
+        </div>
         
     </main>
 
@@ -78,7 +95,7 @@
             <div>
                 <nav>
                     <ul class="navigation-footer">      
-                        <li><a href="#" title="Home">Home</a></li>
+                        <li><a href="index.html" title="Home">Home</a></li>
                         <li><a href="products-page.html" title="Products">Products</a></li>
                         <li><a href="reach-me-page.html" title="Reach Me">Reach Me</a></li>
                         <li><a href="about-us-page.html" title="About US">About us</a></li>

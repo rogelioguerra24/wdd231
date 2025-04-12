@@ -67,7 +67,7 @@ function createCards(listItems) {
 }
 
 async function iniciate () {
-    const defaults = await getItemsData(url);
+    const defaults = await getItemsData();
     createCards(defaults)
 }
 

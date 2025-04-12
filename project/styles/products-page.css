@@ -191,3 +191,87 @@ footer{
 .hero-text p{
     font-size: 1rem;
 }
+
+/*This code is for designing the second section part of the main*/
+.section-gallery{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 70px 15px;
+    gap: 10px;
+}
+.filters nav{
+    position: sticky;
+    top: 0;
+}
+.product-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    font-family: var(--font-paragraph);
+    text-align: center;
+}
+
+/*Cards ppart of the gallery page*/
+#cards div {
+    background-color: #FAD6B2;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-height: 250px;
+    display: grid;  
+    gap: 5px;
+    padding: 0 0 10px;  
+    grid-template-areas: 
+    "photograph"
+    "description"
+    "name"
+    "price"
+}
+#cards div > :nth-child(3) {
+    height: 200px;
+}
+
+#cards div h3 {
+    grid-area: name;
+    font-size: 15px;
+    color: var(--color-logo-two);
+}
+/* Imagen dentro del grid */
+#cards  img {
+    grid-area: photograph;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#cards div p{
+    font-size: 13px;
+    grid-area: price;
+    
+}
+
+/*this is for the filter part of the page*/
+#buttonDisplay { 
+    display: none;  
+}
+.menuLinksFilter{
+    background-color: var(--color-logo-two);
+    font-family: var(--font-title);
+    font-size: 1.3rem;
+    display: block;
+    overflow: hidden;
+}
+.menuLinksFilter li a {
+    display: inline-block; /*It lets me interact with the a tag*/
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
+    color: var(--color-logo-three);
+}
+.menuLinksFilter a:hover{
+    background-color: var(--color-logo-three);
+    color: var(--color-logo-one);
+    width: 100%;
+}
+
+
