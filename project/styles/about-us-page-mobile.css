@@ -78,12 +78,17 @@
     .footer-nav{
         grid-template-columns: 1fr;
         gap: 30px;
-        padding: 15px 15px 0;
+        padding: 0;
+    }
+    .footer-nav p{
+        padding: 0;
+    }
+    .navigation-footer li a{
+        font-size: 0.83rem;
     }
     .navigation-footer{
         flex-direction: row;
         gap: 30px;
-        justify-items: center;
     }
     .formDesign{
         display: none;

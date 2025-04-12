@@ -185,7 +185,7 @@ main{
 .hero-text {
     color: var(--color-logo-three);
     text-align: center;
-    width: 500px;
+    width: 600px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -236,6 +236,9 @@ main{
 }
 
 /*Third section of the home page*/
+.section-three{
+    padding: 0 10px 150px ;
+}
 #cards div {
     background-color: #FAD6B2;
     font-family: var(--font-paragraph);
@@ -253,6 +256,7 @@ main{
 
 #cards div h2 {
     margin: 1rem 10px;
+    font-size: 1.35rem;
     grid-area: name;
 }
 #cards div img {
@@ -260,11 +264,13 @@ main{
 }
 #cards div p{
     margin: 10px;    
+    font-size: 1rem;
     grid-area: description;
 }
 #cards div address{
     margin: 10px;
     grid-area: location;
+    font-size: 0.8rem;
 }
 #cards img {
     max-width: 160px;

@@ -73,22 +73,27 @@
     .footer-nav{
         grid-template-columns: 1fr;
         gap: 30px;
-        padding: 15px 15px 0;
+        padding: 0;
+    }
+    .footer-nav p{
+        padding: 0;
+    }
+    .navigation-footer li a{
+        font-size: 0.83rem;
     }
     .navigation-footer{
         flex-direction: row;
         gap: 30px;
-        justify-items: center;
     }
     .formDesign{
         display: none;
     }
     /*The code of above is used to the navigation and footer*/
+
+    /*This code is for hero image*/
     .section-hero-image{
         background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../images/hero-image-mobile.webp);
     }
-
-    /*This code is for hero image*/
     .hero-text h1{
         font-size: 2.4rem;
     }
@@ -109,6 +114,9 @@
     }
 
     /*This following code is for the random cards*/
+    .section-three{
+        padding: 10px;
+    }
     #cards div {
         max-width: 400px;
         grid-template-areas: 

@@ -162,8 +162,32 @@ footer{
 }
 
 /*This line of code is to set a different background image*/
-main{
-    background: url(https://images.pexels.com/photos/4487512/pexels-photo-4487512.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2) no-repeat center center;
+.section-hero-image{
+    font-family: var(--font-paragraph);
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../images/hero-image-products.webp);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items:self-end;
+    padding: 0 0 60px;
     height: 40rem;
+}
+.hero-text {
+    color: var(--color-logo-three);
+    text-align: center;
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.hero-text h1{
+    font-size: 3.4rem;
+}
+.hero-text p{
+    font-size: 1rem;
 }
