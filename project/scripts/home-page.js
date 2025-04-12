@@ -15,10 +15,14 @@ year.innerHTML = `${today.getFullYear()}`;
 //This is an example of fettching data with url in another web page
 const url = "https://raw.githubusercontent.com/rogelioguerra24/wdd231/refs/heads/main/project/data/ourClients.json";
 
-async function getItemsData() {
-    const response = await fetch(url);
-    const data = await response.json();  
-    return data.ourClients; //Return an array
+async function getClientData() {
+    try {
+        const response = await fetch(url);
+        const data = await response.json();  
+        return data.ourClients; //Return an array
+    }catch(error){
+        console.log(error);
+    }
 };
 
 const cards = document.querySelector("#cards");
@@ -56,7 +60,7 @@ function getRandomItems(array) {
 }
 
 async function iniciate () {
-    const defaults = await getItemsData(url);
+    const defaults = await getClientData(url);
     let randomData = getRandomItems(defaults)
     createCards(randomData)
 }
