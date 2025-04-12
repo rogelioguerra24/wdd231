@@ -117,4 +117,7 @@
         "description"
         "location"
     }
+    #cards img{
+        max-width: 100%;
+    }
 }

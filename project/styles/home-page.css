@@ -267,12 +267,7 @@ main{
     grid-area: location;
 }
 #cards img {
-    max-width: 100%;
-    object-fit: cover;
-    
-}
-#cards div img {
-    
+    max-width: 160px;
     height: 100%;
     object-fit: cover;
 }
@@ -289,6 +284,9 @@ main{
     }
     #cards div {
         max-height: 200px;
+    }
+    #cards div img {
+        max-width: 150px;
     }
 }
 @media only screen and (min-width: 102rem){
