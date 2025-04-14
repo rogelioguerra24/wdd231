@@ -110,7 +110,7 @@
         height: 100%;
     }
 
-    .section-location .second h2, h3{
+    .section-location .second h2, .section-location .second h3 {
         color: var(--color-logo-one);
         font-size: 1.7rem;
     }
