@@ -31,7 +31,7 @@ function createCards(ourProducts) {
         
 
         name.textContent = product.productName;
-        price.innerHTML = `<strong>Price:</strong> ${product.price}`;
+        price.innerHTML = `<strong>Price:</strong> S/.${product.price.toFixed(2)}`;
 
         img.setAttribute("src", product.imageUrl);
         img.setAttribute("alt", `${product.productName}`);
@@ -40,7 +40,9 @@ function createCards(ourProducts) {
         card.appendChild(name);
         card.appendChild(price);
         card.appendChild(img);
-
+        card.addEventListener("click", () => {
+            displayMembershipDetails(product)
+        })
         cards.appendChild(card);
     });
 }
@@ -96,3 +98,29 @@ burgerElementFilter.addEventListener('click', () => {
     menuElementFilter.classList.toggle('open');
     burgerElementFilter.classList.toggle('open'); // toggle means change class list of in this case 'open'
 });
+
+// THIS PART OF THE SCRIPT WILL ALLOW US TO USE THE DIALOG
+const dialog = document.getElementById("dialog-products");
+
+function displayMembershipDetails(product) {
+    dialog.innerHTML = '';
+    dialog.innerHTML = `
+    <button id="closeModal">❎</button>
+    <img src="${product.imageUrl}" alt="${product.productName} loading="lazy"></img>
+    <h2>${product.productName}</h2>
+    <p>${product.description}<p>
+    <p><strong>Category</strong>: ${product.category.charAt(0).toUpperCase() + product.category.slice(1).toLowerCase()}</p>
+    <p><strong>Price</strong>: S/.${product.price.toFixed(2)}</p>
+    `;
+
+    dialog.showModal();
+
+    document.getElementById("closeModal").addEventListener("click", () => {
+        dialog.classList.add("closing"); // Start closing animation
+
+        setTimeout(() => {
+            dialog.classList.remove("closing"); // Remove animation class
+            dialog.close();
+    }, 300);
+    });
+}

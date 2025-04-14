@@ -110,11 +110,16 @@
         padding: 40px 15px;
         gap: 10px;
     }
+    #cards div:hover {
+        box-shadow: none;
+    }
 
+    #cards div {
+        max-height: 300px;
+    }
     #buttonDisplay { 
         display: block;  
         width: 100%;
-        
         padding: 10px 0;
         border: none;
         background-color: var(--color-logo-one);
@@ -152,5 +157,15 @@
     }
     #animated-metFilter.open {
         grid-template-rows: 1fr; /*Here you define the end*/
+    }
+
+    /*This following part of the code will be for designing modal dialog element*/
+    .dialog-products{
+        padding: 1rem;
+        max-width: 250px;
+        font-size: 1.1rem;        
+    }
+    .dialog-products img{
+        max-width: 250px;
     }
 }
