@@ -66,3 +66,56 @@ async function iniciate () {
 }
 
 iniciate();
+
+// This part is for codding the id elements of weather part
+const currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('#description');
+const highSpan = document.querySelector('#high');
+const lowSpan = document.querySelector('#low');
+const humiditySpan = document.querySelector('#humidity');
+const cityName = document.querySelector('#city-name');
+
+// Url for the API of weather
+//example to call this kind of API = https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
+//-12.047250315140355, -77.04278771333321 coordinates of Lima Peru
+// API for one day "https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&units=metric&appid=cdc74a28490c0e57d724282f25576cff"
+
+const url2 = "https://api.openweathermap.org/data/2.5/forecast?lat=-12.04&lon=-77.04&units=metric&appid=cdc74a28490c0e57d724282f25576cff";
+
+async function apiFetch () {
+    try {
+        const response = await fetch(url2);
+        if (response.ok) {
+            const data = await response.json();
+            //console.log(data);
+            displayResults(data);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+function displayResults(data) {
+    console.log("Datos recibidos:", data);  // Agregado para verificar
+    let firstForecast = data.list[0];
+    
+    const iconSrc = `https://openweathermap.org/img/wn/${data.list[0].weather[0].icon}@2x.png`;
+    let desc = firstForecast.weather[0].description;
+    let high = firstForecast.main.temp_max;
+    let low = firstForecast.main.temp_min;
+    let humidity = firstForecast.main.humidity;
+    let city = data.city.name;
+    
+    cityName.innerHTML = `${city}, Perú`;
+    currentTemp.innerHTML = `<strong>Current Weather: </strong>${firstForecast.main.temp}&deg;C`;
+    weatherIcon.setAttribute("src", iconSrc);
+    weatherIcon.setAttribute("alt", desc);
+    captionDesc.textContent = desc.charAt(0).toUpperCase() + desc.slice(1).toLowerCase();
+    highSpan.innerHTML = `<strong>High Temperature: </strong>${high}&deg;C`;
+    lowSpan.innerHTML = `<strong>Low Temperature: </strong>${low}&deg;C`;
+    humiditySpan.innerHTML = `<strong>Humidity: </strong> ${humidity}`;
+}
+apiFetch();

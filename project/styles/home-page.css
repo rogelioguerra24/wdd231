@@ -216,6 +216,37 @@ main{
 }
 
 /*Second section of the home page*/
+.section-location{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    height: 600px;
+    overflow: hidden;
+}
+.section-location .first img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.section-location .second{
+    background-color:var(--color-logo-two);
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: var(--font-paragraph);
+    color: var(--color-logo-three);
+}
+.section-location .second h2, .section-location .second h3{
+   color: var(--color-logo-one);
+   font-size: 1.8rem;
+}
+.section-location .second p{
+    font-size: 0.95rem;
+}
+
+/*Third section of the home page*/
 .section-sub{
     font-family: var(--font-paragraph);
     text-align: center;
@@ -230,14 +261,15 @@ main{
     margin: 0 auto;
 }
 .section-sub h2 {
-    font-size: 2.3rem;
+    font-size: 2.7rem;
+    font-family: var(--font-title);
     text-decoration: underline;
     text-decoration-color: var(--color-logo-one);
 }
 
 /*Third section of the home page*/
 .section-three{
-    padding: 0 10px 150px ;
+    padding: 150px 10px 150px ;
 }
 #cards div {
     background-color: #FAD6B2;
