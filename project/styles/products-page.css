@@ -173,7 +173,7 @@ footer{
     justify-content: center;
     align-items:self-end;
     padding: 0 0 60px;
-    height: 40rem;
+    height: 45rem;
 }
 .hero-text {
     color: var(--color-logo-three);
