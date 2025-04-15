@@ -119,3 +119,20 @@ function displayResults(data) {
     humiditySpan.innerHTML = `<strong>Humidity: </strong> ${humidity}`;
 }
 apiFetch();
+
+//To Save The information of a form
+const form = document.querySelector('#formone');//Here you decide which form you want to save
+
+//Instead of using the submit button with an id you can only use teh following code
+//with addEventListener.
+form.addEventListener('submit', (e) => {
+    //Here you are setting the values in the array Json in the Aplication part of the page
+    const name = form.elements['name'].value;
+    const phoneNumber = form.elements['phoneNumber'].value;
+    const data = { name, phoneNumber };
+
+    const storedData = JSON.parse(localStorage.getItem('dataClient')) || [];
+    storedData.push(data);
+
+    localStorage.setItem('dataClient', JSON.stringify(storedData));
+});

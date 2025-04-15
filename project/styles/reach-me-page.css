@@ -178,7 +178,7 @@ footer{
 .form-method{
     background-image:
     linear-gradient(rgba(255, 255, 255, 0.7));
-    padding: 2rem;
+    padding: 0.8rem;
     border-radius: 8px;
     max-width: 330px;
 }
@@ -204,8 +204,9 @@ footer{
 }
 .section-hero-image2{
     flex-direction: column;
+    max-width: 330px;;
     background-image:
-    linear-gradient(rgba(255, 255, 255, 0.5));
+    linear-gradient(rgba(255, 255, 255, 0.7));
     font-family: var(--font-paragraph);
     font-size: 1.5rem;
     gap: 10px;
@@ -219,6 +220,8 @@ footer{
 }
 .section-hero-image2 h2{
     font-size: 1.8rem;
+    text-align: center;
+    color: var(--color-logo-one);
     font-family: var(--font-title);
 }
 .section-hero-image2 p{

@@ -76,7 +76,7 @@
         padding: 0;
     }
     .footer-nav p{
-        padding: 0;
+        padding: 0 1rem;
     }
     .navigation-footer li a{
         font-size: 0.83rem;
@@ -93,7 +93,7 @@
     /*This line of code is to set a different background image*/
     .section-hero-image{
         background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../images/hero-image-reach-me-mobile.webp);
-        max-height: 40rem;
+        max-height: 50rem;
     }
     .first{
         display: block;
@@ -116,11 +116,13 @@
         background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../images/hero-image-reach-me-mobile.webp);
     }
     .section-hero-image2{
-        max-width: 320px;;
+        max-width: 330px;;
+        background-image:
+        linear-gradient(rgba(255, 255, 255, 0.7));
     }
     
     .section-hero-image2 h1{
-        
+
         font-size: 2.6rem;
         
     }

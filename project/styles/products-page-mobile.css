@@ -76,8 +76,9 @@
         padding: 0;
     }
     .footer-nav p{
-        padding: 0;
+        padding: 0 1rem;
     }
+  
     .navigation-footer li a{
         font-size: 0.83rem;
     }

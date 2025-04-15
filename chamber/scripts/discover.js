@@ -27,7 +27,7 @@ const url = "https://raw.githubusercontent.com/rogelioguerra24/wdd231/refs/heads
 async function getItemsData() {
     const response = await fetch(url);
     const data = await response.json();
-    console.table(data.interestingsItems);
+
     return data.interestingsItems; //Return an array
 };
 

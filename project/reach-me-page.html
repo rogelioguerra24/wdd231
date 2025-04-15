@@ -51,7 +51,7 @@
         <section class="section-hero-image">
             <div class="form-method">
                 <h2>We’re excited to welcome you to the family!</h2>
-                <form method="get" action="thank-you-page.html" class="formDesign first">
+                <form method="get" id="collectData" action="thank-you-page.html" class="formDesign first">
                     <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
                     <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
                     <label>Email <input type="email" name="email" autocomplete="email" placeholder="john89@gmail.com" title="Your Email"></label>
@@ -91,11 +91,11 @@
                 </nav> 
             </div>
             <div>
-                <form action="thank-you-page.html" method="get" class="formDesign">
+                <form  id="formone" method="get" class="formDesign">
                     <h2>Contact Me</h2>
-                    <label>Name <input type="text" name="name" required autocomplete="given-name" title="Your Name"></label>
-                    <label>Phone Number<input type="tel" name="phone-number" required autocomplete="tel" title="Your Phone Number"></label>
-                    <button type="submit" id="submit">Send ➤</button>
+                    <label>Name <input id="name" type="text" name="name" required autocomplete="given-name" title="Your Name"></label>
+                    <label>Phone Number<input id="phoneNumber" type="tel" name="phone-number" required autocomplete="tel" title="Your Phone Number"></label>
+                    <button id="submit" type="submit" id="submit">Send ➤</button>
                 </form>
             </div>
         </section>
