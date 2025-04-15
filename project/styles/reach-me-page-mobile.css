@@ -93,6 +93,7 @@
     /*This line of code is to set a different background image*/
     .section-hero-image{
         background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../images/hero-image-reach-me-mobile.webp);
+        max-height: 40rem;
     }
     .first{
         display: block;

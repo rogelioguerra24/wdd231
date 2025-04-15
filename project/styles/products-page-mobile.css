@@ -93,6 +93,7 @@
     /*This code is for hero image*/
     .section-hero-image{
         background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../images/hero-image-products-mobile.webp);
+        max-height: 40rem;
     }
     .hero-text{
         width: 95%;

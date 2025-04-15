@@ -111,6 +111,7 @@
     /*This code is for hero image*/
     .section-hero-image {
         background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../images/hero-image-mobile.webp);
+        max-height: 40rem;
     }
 
     .hero-text h1 {
