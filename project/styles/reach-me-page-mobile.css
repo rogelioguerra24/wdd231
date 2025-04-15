@@ -1,10 +1,5 @@
 @media (max-width: 500px){
 
-    main { /*This line of code is to set a different background image*/
-        background: url(https://images.pexels.com/photos/6869060/pexels-photo-6869060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)no-repeat center center;
-        background-size:cover;
-    }
-
     header {
         display: flex;
         justify-content: space-between;
@@ -94,4 +89,45 @@
         display: none;
     }
     /*The code of above is used to the navigation and footer*/
+
+    /*This line of code is to set a different background image*/
+    .section-hero-image{
+        background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../images/hero-image-reach-me-mobile.webp);
+    }
+    .first{
+        display: block;
+
+    }
+    .form-method{
+        max-width: 300px;
+    }
+    .form-method h2{
+        font-family: var(--font-title);
+        text-align: center;
+        color: var(--color-logo-one);
+        font-size: 1.9rem;
+    } 
+    #submit1:hover {
+        background-color:var(--color-logo-one);
+        color: var(--color-logo-three);
+    }
+    .thankspage{
+        background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../images/hero-image-reach-me-mobile.webp);
+    }
+    .section-hero-image2{
+        max-width: 320px;;
+    }
+    
+    .section-hero-image2 h1{
+        
+        font-size: 2.6rem;
+        
+    }
+    .section-hero-image2 h2{
+        font-size: 1.8rem;
+    }
+    .section-hero-image2 p{
+        font-size: 1.1rem;
+    }
+    
 }

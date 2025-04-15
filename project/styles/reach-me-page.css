@@ -113,7 +113,7 @@ footer{
     align-items: center;
     border-radius: 8px;
 }
-.formDesign input[type=text], .formDesign input[type=tel]{
+.formDesign input[type=text], .formDesign input[type=tel], .formDesign input[type=email]{
     display: block;
     margin: .1rem 0 1rem 0 ;
     padding: .3rem;
@@ -162,8 +162,77 @@ footer{
 }
 
 /*This line of code is to set a different background image*/
-main{
-    background: url(https://images.pexels.com/photos/4487512/pexels-photo-4487512.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2) no-repeat center center;
+.section-hero-image {
+    font-family: var(--font-paragraph);
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../images/hero-image-reach-me-page.webp) ;
     background-size: cover;
-    height: 40rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 50rem;
+}
+
+.form-method{
+    background-image:
+    linear-gradient(rgba(255, 255, 255, 0.5));
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 330px;
+}
+.form-method h2{
+    font-family: var(--font-title);
+    text-align: center;
+    color: var(--color-logo-one);
+    font-size: 1.9rem;
+
+}
+#submit1 {
+    background-color:var(--color-logo-one);
+    font-family: var(--font-title);
+    font-size: 1.3rem;
+    color: var(--color-logo-three);
+    box-shadow: 4px 4px 10px gray;
+    padding: 0.8rem;
+}
+#submit1:hover {
+    background-color:var(--color-logo-two);
+    color: var(--color-logo-three);
+    box-shadow: 4px 4px 10px gray;;
+}
+.section-hero-image2{
+    flex-direction: column;
+    background-image:
+    linear-gradient(rgba(255, 255, 255, 0.5));
+    font-family: var(--font-paragraph);
+    font-size: 1.5rem;
+    gap: 10px;
+    padding: 1rem;
+    border-radius: 8px;
+}
+.section-hero-image2 h1{
+    color: var(--color-logo-one);
+    font-size: 2.6rem;
+    font-family: var(--font-title);
+}
+.section-hero-image2 h2{
+    font-size: 1.8rem;
+    font-family: var(--font-title);
+}
+.section-hero-image2 p{
+    font-size: 1.1rem;
+}
+
+.thankspage { 
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../images/hero-image-reach-me-page.webp) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 50rem;
 }

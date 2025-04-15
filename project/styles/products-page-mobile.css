@@ -125,6 +125,7 @@
         background-color: var(--color-logo-one);
         font-family: var(--font-title);
         font-size: 30px;
+        color: var(--color-logo-three);
     }
 
     #buttonDisplay {

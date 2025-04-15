@@ -1,4 +1,4 @@
-@media (max-width: 500px){
+@media (max-width: 500px) {
 
     header {
         display: flex;
@@ -6,11 +6,12 @@
         padding: 10px;
         background-color: var(--color-logo-three);
     }
-    header img{
+
+    header img {
         max-width: 150px;
         position: relative;
     }
-    
+
     /*This part of code is more clear to set the burger button
     The thing here is that you are only resizeing the grid of the nav
     From 0fr to 1fr(all tha nav) and you erase the overflow with hidden
@@ -19,14 +20,20 @@
     #animated-met {
         display: grid;
         overflow: hidden;
-        grid-template-rows: 0fr; /*Here you define the start*/
-        transition: grid-template-rows 0.5s ease-out; /*Here you define the transition */
+        grid-template-rows: 0fr;
+        /*Here you define the start*/
+        transition: grid-template-rows 0.5s ease-out;
+        /*Here you define the transition */
     }
+
     #animated-met ul {
-        overflow: hidden; /*Here you hidden the overflow*/
+        overflow: hidden;
+        /*Here you hidden the overflow*/
     }
+
     #animated-met.open {
-        grid-template-rows: 1fr; /*Here you define the end*/
+        grid-template-rows: 1fr;
+        /*Here you define the end*/
     }
 
     /*I learned the oposites of display and position
@@ -34,11 +41,13 @@
     display: flex vs display: block
     display inline-block is for things that don't let interact directly like 'a' */
     .menuLinks {
-        display: block; 
+        display: block;
     }
+
     .menuLinks li a {
         width: 100%;
     }
+
     .menuLinks a:hover {
         background-color: var(--color-logo-two);
         color: var(--color-logo-three);
@@ -46,14 +55,17 @@
 
     /*To set or resize the button and its content*/
     #myButton {
-        display:block;
+        display: block;
     }
+
     #myButton::before {
         content: "𓃑";
     }
+
     #myButton.open::before {
         content: "𓏬";
     }
+
     #myButton {
         font-size: 2rem;
         background: none;
@@ -65,89 +77,107 @@
     }
 
     /*The part behind id for the nav and header of the page and the followig for the footer*/
-    .footer-social{
+    .footer-social {
         text-align: center;
         flex-direction: column;
         gap: 15px;
     }
-    .footer-nav{
+
+    .footer-nav {
         grid-template-columns: 1fr;
         gap: 30px;
         padding: 0;
     }
-    .footer-nav p{
+
+    .footer-nav p {
         padding: 0;
     }
-    .navigation-footer li a{
+
+    .navigation-footer li a {
         font-size: 0.83rem;
     }
-    .navigation-footer{
+
+    .navigation-footer {
         flex-direction: row;
         gap: 30px;
     }
-    .formDesign{
+
+    .formDesign {
         display: none;
     }
+
     /*The code of above is used to the navigation and footer*/
 
     /*This code is for hero image*/
-    .section-hero-image{
-        background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../images/hero-image-mobile.webp);
+    .section-hero-image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../images/hero-image-mobile.webp);
     }
-    .hero-text h1{
+
+    .hero-text h1 {
         font-size: 2.4rem;
     }
-    .hero-text p{
+
+    .hero-text p {
         font-size: 0.9rem;
     }
 
     /*Second section of the home page*/
-    .section-location{
-        grid-template-columns: 1fr ;
-        height: 100%;
-    }
-    .section-location .first img{
+    .section-location {
+        grid-template-columns: 1fr;
         height: 100%;
     }
 
-    .section-location .second h2, .section-location .second h3 {
+    .section-location .first img {
+        height: 100%;
+    }
+
+    .section-location .second h2,
+    .section-location .second h3 {
         color: var(--color-logo-one);
         font-size: 1.7rem;
     }
-    .section-location .second p{
+
+    .section-location .second p {
         font-size: 0.85rem;
     }
 
     /*This is for the sub section*/
-    .section-sub{
+    .section-sub {
         height: 40rem;
     }
-    .section-sub h2, p {
+
+    .section-sub h2,
+    p {
         max-width: 300px;
         margin: 0 auto;
     }
+
     .section-sub h2 {
         font-size: 1.8rem;
     }
-    .section-sub p{
+
+    .section-sub p {
         font-size: 0.9rem;
     }
 
     /*This following code is for the random cards*/
-    .section-three{
+    .section-three {
         padding: 30px 10px;
     }
+
     #cards div {
         max-width: 400px;
-        grid-template-areas: 
-        "name"
-        "photograph"
-        "description"
-        "location"
+        grid-template-areas:
+            "name"
+            "photograph"
+            "description"
+            "location"
     }
-    #cards img{
+
+    #cards img {
         max-width: 100%;
     }
+
     #cards div:hover {
         box-shadow: none;
     }
