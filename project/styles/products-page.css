@@ -160,6 +160,10 @@ footer{
     color: var(--color-logo-three);
     font-weight: bold;
 }
+.footer-copyright p a{
+    color: var(--color-logo-two);
+    text-decoration: underline;
+}
 
 /*This line of code is to set a different background image*/
 .section-hero-image{
