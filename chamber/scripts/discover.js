@@ -22,10 +22,10 @@ burgerElement.addEventListener('click', () => {
 //import { interestingsItems } from "./interestingItems.mjs";
 
 //This is an example of fettching data with url in another web page
-const url = "https://raw.githubusercontent.com/rogelioguerra24/wdd231/refs/heads/main/chamber/data/interestingItems.json";
+//const url = "https://raw.githubusercontent.com/rogelioguerra24/wdd231/refs/heads/main/chamber/data/interestingItems.json";
 
 async function getItemsData() {
-    const response = await fetch(url);
+    const response = await fetch("./data/interestingItems.json");//I solved this here
     const data = await response.json();
 
     return data.interestingsItems; //Return an array

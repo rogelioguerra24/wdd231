@@ -118,6 +118,8 @@ ul.menuLinks li a {
 
 #cards div img {
     grid-area: photograph;
+    filter: saturate(50%); /*Here I used a CSS property effect*/
+    transform: scaleX(-1) /*Here I used a CSS property effect*/
 }
 
 #cards div p{
