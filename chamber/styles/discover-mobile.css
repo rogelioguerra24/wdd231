@@ -71,7 +71,12 @@
     nav.open {
         grid-template-rows: 1fr;
     }
-    
+    #cards div img {
+        grid-area: photograph;
+        filter: none; /*Here I used a CSS property effect*/
+        transform: scaleX(1) /*Here I used a CSS property effect*/
+    }
+
     /*The following code is for desing the footer part of the page*/
     footer {
         background-color: var(--first-background-color);
