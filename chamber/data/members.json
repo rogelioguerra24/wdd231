@@ -5,7 +5,7 @@
             "adress": "One Apple Park Way, Cupertino, CA 95014, USA",
             "phoneNumber": "+1-800-MY-APPLE",
             "websiteUrl": "https://www.apple.com",
-            "iconOrImages": "https://rogelioguerra24.github.io/wdd231/chamber/images/logotipo-grande-de-apple.png",
+            "iconOrImages": "https://rogelioguerra24.github.io/wdd231/chamber/images/logotipo-grande-de-apple.webp",
             "memberLevel": 3,
             "slogan": "Think Different"
         },
@@ -14,7 +14,7 @@
             "adress": "One Microsoft Way, Redmond, WA 98052, USA",
             "phoneNumber": "+1-425-882-8080",
             "websiteUrl": "https://www.microsoft.com",
-            "iconOrImages": "https://rogelioguerra24.github.io/wdd231/chamber/images/microsoft.png",
+            "iconOrImages": "https://rogelioguerra24.github.io/wdd231/chamber/images/microsoft.webp",
             "memberLevel": 3,
             "slogan": "Empowering us all"
         },
@@ -23,7 +23,7 @@
             "adress": "1600 Amphitheatre Parkway, Mountain View, CA 94043, USA",
             "phoneNumber": "+1-650-253-0000",
             "websiteUrl": "https://www.x.com",
-            "iconOrImages": "https://rogelioguerra24.github.io/wdd231/chamber/images/gorjeo.png",
+            "iconOrImages": "https://rogelioguerra24.github.io/wdd231/chamber/images/gorjeo.webp",
             "memberLevel": 3,
             "slogan": "Do the right thing"
         },
@@ -32,7 +32,7 @@
             "adress": "410 Terry Ave N, Seattle, WA 98109, USA",
             "phoneNumber": "+1-888-280-4331",
             "websiteUrl": "https://www.amazon.com",
-            "iconOrImages": "https://rogelioguerra24.github.io/wdd231/chamber/images/pago-de-amazon.png",
+            "iconOrImages": "https://rogelioguerra24.github.io/wdd231/chamber/images/pago-de-amazon.webp",
             "memberLevel": 1,
             "slogan": "Work Hard. Have Fun. Make History"
         },
@@ -41,7 +41,7 @@
             "adress": "3500 Deer Creek Road, Palo Alto, CA 94304, USA",
             "phoneNumber": "+1-888-518-3752",
             "websiteUrl": "https://www.messenger.com",
-            "iconOrImages": "https://rogelioguerra24.github.io/wdd231/chamber/images/mensajero.png",
+            "iconOrImages": "https://rogelioguerra24.github.io/wdd231/chamber/images/mensajero.webp",
             "memberLevel": 3,
             "slogan": "Accelerating the world's transition to sustainable energy"
         },
@@ -50,7 +50,7 @@
             "adress": "129 Samsung-ro, Yeongtong-gu, Suwon-si, Gyeonggi-do, South Korea",
             "phoneNumber": "+82-2-2255-0114",
             "websiteUrl": "https://www.samsung.com",
-            "iconOrImages": "https://rogelioguerra24.github.io/wdd231/chamber/images/samsung.png",
+            "iconOrImages": "https://rogelioguerra24.github.io/wdd231/chamber/images/samsung.webp",
             "memberLevel": 2,
             "slogan": "Inspire the World, Create the Future"
         },
@@ -59,7 +59,7 @@
             "adress": "1-7-1 Konan, Minato-ku, Tokyo 108-0075, Japan",
             "phoneNumber": "+81-3-6748-2111",
             "websiteUrl": "https://www.sony.com",
-            "iconOrImages": "https://rogelioguerra24.github.io/wdd231/chamber/images/sony.png",
+            "iconOrImages": "https://rogelioguerra24.github.io/wdd231/chamber/images/sony.webp",
             "memberLevel": 1,
             "slogan": "Be Moved"
         }
